@@ -4,7 +4,12 @@ import jellyfish
 class StringAnalysis:
 
     def __init__(self, string_stream):
-        self.string_stream = string_stream
+        """
+        Stores the string received as a list of words (i.e. splits by spaces).
+
+        :param string_stream: a python string.
+        """
+        self.string_stream = string_stream.split(' ')
 
     def get_most_similar_word(self, word):
         """
